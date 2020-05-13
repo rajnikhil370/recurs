@@ -1,0 +1,20 @@
+#include<stdio.h>
+int sum(int n)
+{
+  if(n>=1)
+  {
+    return (n%10 + sum(n/10));}
+    else
+   {
+     
+   return n;
+  }}
+
+
+int main()
+{
+  int n=1234;
+int  result=sum(n);
+  printf("sum of number %d is =%d",n, result);
+  
+}
